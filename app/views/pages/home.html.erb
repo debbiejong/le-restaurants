@@ -1,0 +1,9 @@
+<p>The time is <%= Time.now %></p>
+
+<% categories = ['japanese', 'chinese', 'mexican'] %>
+
+<ul>
+  <% categories.each do |category| %>
+    <li><%= category %></li>
+  <% end %>
+</ul>
