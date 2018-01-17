@@ -2,7 +2,7 @@
 
 <ul>
   <% @restaurants.each do |restaurant| %>
-    <li><%= restaurant[:name] %></li>
+    <li><%= restaurant.name %>(<%= restaurant.address %>) - <%= "*" * restaurant.rating %></li>
   <% end %>
 </ul>
 
