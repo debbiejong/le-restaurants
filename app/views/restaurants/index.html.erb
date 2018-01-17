@@ -1,1 +1,16 @@
 <h1>List of Restaurants</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant[:name] %></li>
+  <% end %>
+</ul>
+
+<p>Search for a specific category</p>
+<form action="/restaurants" method="get">
+  <input type="text" name="category" placeholder="japanese">
+  <input type="submit">
+</form>
+
+<p>Create a new restaurant</p>
+<form action="/restaurants" method="post"></form>
