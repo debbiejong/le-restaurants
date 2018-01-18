@@ -1,9 +1,3 @@
-<p>The time is <%= Time.now %></p>
+<h1>Welcome to my page</h1>
 
-<% categories = ['japanese', 'chinese', 'mexican'] %>
-
-<ul>
-  <% categories.each do |category| %>
-    <li><%= category %></li>
-  <% end %>
-</ul>
+<%= link_to "My favorite restaurants", restaurants_path %>
