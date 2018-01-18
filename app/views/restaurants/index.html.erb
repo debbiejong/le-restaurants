@@ -6,11 +6,14 @@
   <% end %>
 </ul>
 
-<p>Search for a specific category</p>
+<!-- <p>Search for a specific category</p>
 <form action="/restaurants" method="get">
   <input type="text" name="category" placeholder="japanese">
   <input type="submit">
-</form>
+</form> -->
 
-<p>Create a new restaurant</p>
-<form action="/restaurants" method="post"></form>
+<%= link_to "Add a new restaurant", new_restaurant_path %>
+<!-- <p>Create a new restaurant</p> -->
+<!-- <form action="/restaurants" method="post"></form> -->
+<br>
+<%= link_to "Back to home", root_path %>

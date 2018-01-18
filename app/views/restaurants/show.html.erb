@@ -2,5 +2,8 @@
 <p>Address: <%= @restaurant.address %></p>
 <span><%= "*" * @restaurant.rating %></span>
 <br>
+<%= link_to "Edit this restaurant", edit_restaurant_path %>
+<br>
 <%= link_to "Delete this restaurant", restaurant_path(@restaurant), method: :delete, data: {confirm: "Are you sure?"} %>
+<br>
 <%= link_to "Back to restaurants", restaurants_path %>
